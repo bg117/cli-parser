@@ -55,3 +55,27 @@ CommandLineHelpers.ParseCommandLine(opts, args, (opt, arg) =>
 ```
 
 This example program will print `--help passed` when --help is passed, `-b passed` when -b is passed, and `--test passed with args: <csv-args>` when --test is passed with an argument (multiple --test options can be passed).
+
+## Notes
+
+- A long option and its argument (if applicable) may be separated by an equals sign, a colon, or space/s.
+- Short options can be combined as if they were one single option.
+- Separating the argument for a short option with space/s is optional.
+- Arguments for options are represented as an array, in case duplicate options appear.
+
+Full example:
+```
+program --long arg --long arg2 -DDebug --long1:arg --xyz=arg -abc
+```
+
+```
+{
+  "long": ["arg", "arg2"],
+  "D": ["Debug"],
+  "long1": ["arg"],
+  "xyz": ["arg"],
+  "a": [],
+  "b": [],
+  "c": []
+}
+```
