@@ -1,4 +1,4 @@
-namespace OpenProject.ApplicationShell.Helpers;
+namespace CliParser;
 
 public static class CommandLineHelpers
 {
