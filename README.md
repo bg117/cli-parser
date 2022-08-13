@@ -4,7 +4,7 @@ Getopt but for C#.
 
 ## Installation
 
-Simply copy the CommandLineParser.cs file onto your project. All objects are in `namespace CliParser`.
+Simply copy the CommandLineHelpers.cs file onto your project. All objects are in `namespace CliParser`.
 
 ## Usage
 
