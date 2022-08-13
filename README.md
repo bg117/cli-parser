@@ -17,19 +17,19 @@ using CliParser;
 
 CommandLineOption[] opts = new []
 {
-  new []
+  new()
   {
     Option = "help",
     IsLongOption = true,
     RequiresArgument = false
   },
-  new []
+  new()
   {
     Option = "test",
     IsLongOption = true,
     RequiresArgument = true
   },
-  new []
+  new()
   {
     Option = "b",
     IsLongOption = false,
